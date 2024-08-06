@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cart.CartFragment">
+
+    <TextView
+        android:id="@+id/titleCart"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Cart"
+        android:textColor="@color/black1"
+        android:layout_marginTop="8dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:fontFamily="@font/yeonsung_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleCart"
+        app:layout_constraintBottom_toTopOf="@id/proceedBtn"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceedBtn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:background="@drawable/textviewshape"
+        android:text="Proceed"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textColor="@color/startColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".9"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
